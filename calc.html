@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <title>Interactive Calculator</title> 
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/scripts.js"></script>
-    <title>Interactive Calculator</title>
+    <script src="js/script.js"></script>
   </head> 
   <body>
     <h1>Interactive Calculator</h1>
     <form id="calc">
-      <label for="input1">1st number</label>
+      <label for="input1">What is the first number you would like to calculate?</label>
       <input id="input1" type="text">
-      <label for="input2">2nd number</label>
+      <br>
+      <br>
+      <label for="input2">What is the second number you would like to calculate?</label>
       <input id="input2" type="text">
-
+      <br>
     <label>
+      <h2>Please choose the mathmatic function you would like to calculate: </h2>
       <input type="radio" name="operator" value="add">
-      add
+      Add
     </label>
     <label>
       <input type="radio" name="operator" value="subtract">
-      subtract
+      Subtract
     </label>
     <label>
       <input type="radio" name="operator" value="multiply">
-      multiply
+      Multiply
     </label>
     <label>
       <input type="radio" name="operator" value="divide">
-      divide
+      Divide
     </label>
 
     <button type="submit" class="btn">Mathatize me Captain!</button>
+    <br>
   </form>
 
   <h2>Results:</h2>
+  <br>
   <p id="output"></p>
 </body>
 </html>
